@@ -1,0 +1,323 @@
+.body{
+    font-family: "Roboto",arial;
+    font-size: 1em;
+    position: relative;
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    color: #fff;
+    min-width: 320px;
+}
+.headerTopNav{
+    height: 28px;
+    background-color: #000;
+    color: #fff;
+    overflow: visible;
+    font-family: "Roboto Condensed";
+    font-size: 14px
+}
+.wrapper{
+    overflow: visible;
+    max-width: 990px;
+    color: #fff;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.headerTopNavLinks{
+    overflow: hidden;
+    height: 28px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+.headerTopNavLinks a{
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    overflow: hidden;
+    font-size: 13px;
+}
+.headerTopNavLinks a:hover{
+    color: white;
+}
+.headerTopNavButtons{
+    margin: 0px;
+    padding: 0px;
+    height: 28px;
+}
+.headerRegister{
+    background-color: #fdc600;
+    color: #000;
+    text-transform: uppercase;
+    float: right;
+}
+.headerTopNavButtons a{
+    display: block;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    color: #000;
+    overflow: hidden;
+    font-size: 14px;
+}
+.headerRegister:before{
+    content: '\2606';
+    margin-right: 5px;
+    font-family: 'IconsFont';
+    font-size: 20px;
+    vertical-align: bottom;
+}
+.headerLogin{
+    position: relative;
+    overflow: visible;
+    float: right;
+    display: block;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 13px;
+}
+.headerLogin a{
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.headerLogin a:before{
+    content: '&';
+    margin-right: 10px;
+    font-family: 'IconsFont';
+    font-size: 20px;
+    vertical-align: bottom;
+
+}
+.headerLogin a:hover{
+    color: white;
+}
+.headerLanguage{
+    position: relative;
+    overflow: visible;
+    float: right;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    padding-right: 0;
+}
+.LanguageFlag {
+    background-image: url("img/en.jpg");
+    background-size: 23.8px 14px;
+    height: 14px;
+    width: 23.8px;
+    margin-top: 7px;
+}
+.headerSearch{
+    position: relative;
+    overflow: visible;
+    float: right;
+    display: block;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 14px;
+    padding-right: 0;
+}
+.headerSearch a{
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.headerSearch a:before{
+    content: 'P';
+    margin-right: 10px;
+    font-family: 'IconsFont';
+    font-size: 20px;
+    vertical-align: bottom;
+
+}
+.headerSearch a:hover{
+    color: white;
+}
+.header24option{
+    position: relative;
+    overflow: visible;
+    float: right;
+    display: block;
+    margin: 0px;
+    padding: 0 10px;
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 13px;
+    padding-right: 0px;
+}
+.header24option a{
+    line-height: 28px;
+    height: 28px;
+    color: #9a9a9a;
+    font-size: 14px;
+}
+.header24option a:hover{
+    color: white;
+}
+.headerLogos{
+    height: 150px;
+    background-color: #fff;
+    color: #000;
+}
+.headerTitle{
+    text-transform: capitalize;
+    color: #000;
+    display: block;
+    float: left;
+    width: 50%;
+    height: inherit;
+    line-height: 135px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'JuventusFans-Light';
+    font-size: 54px;
+}
+.headerTitle img{
+    height: 90px;
+    margin-bottom: 5px;
+    margin-right: .1em;
+    vertical-align: middle;
+}
+.headerTitle strong{
+    font-family: 'JuventusFans-Bold';
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-right: .15em;
+    font-size: 56px;
+}
+@font-face{
+    font-family: 'juve-icons';
+    src: url("fonts/juve-icons.woff");
+}
+@font-face{
+    font-family: 'JuventusFans-Bold';
+    src: url("fonts/JuventusFans-Bold.woff");
+}
+@font-face{
+    font-family: 'JuventusFans-Light';
+    src: url("fonts/JuventusFans-Light.woff");
+}
+@font-face{
+    font-family: 'JuventusFans-Regular';
+    src: url("fonts/JuventusFans-Regular.woff");
+}
+@font-face{
+    font-family: 'OpenSans-CondBold';
+    src: url("fonts/OpenSans-CondBold.ttf");
+}
+@font-face{
+    font-family: 'OpenSans-CondLight';
+    src: url("fonts/OpenSans-CondLight.ttf");
+}
+.headerLogos ul{
+    float: right;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: inherit;
+    overflow: hidden;
+}
+.headerLogos ul li{
+    float: right;
+    margin: 0 1.764%;
+    padding: 0px;
+    height: 150px;
+    line-height: 150px;
+}
+.headerLogoWatch {
+    width: 180px;
+    height: 150px;
+}
+.headerLogos ul li a{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    line-height: inherit;
+    font-size: 90px;
+}
+.iconFont {
+    font-family: 'IconsFont' !important;
+    text-transform: none !important;
+}
+.headerNav {
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    clear: both;
+    font-family: "JuventusFans-Regular";
+    font-size: 24px;
+}
+.headerNav nav{
+    display: table;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+}
+.headerNav nav ul{
+    display: table-row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.headerNav nav ul li{
+    display: table-cell;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.headerNav nav ul li a{
+    display: block;
+    white-space: nowrap;
+    padding: 0px 10px;
+    margin-top: -2px;
+}
+.headerNav nav ul li span{
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    border-bottom: 2px solid #000;
+    color: #9a9a9a;
+}
+.active{
+    color: #fff !important;
+    border-bottom-color: #fff !important;
+}
+
+
+
+

@@ -14,9 +14,9 @@ a{
 }
 .header{
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     color: #fff;
     min-width: 320px;
@@ -33,22 +33,22 @@ a{
     overflow: visible;
     max-width: 990px;
     color: #fff;
-    margin: 0px auto;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
     height: inherit;
     position: relative;
 }
 .headerTopNavLinks{
     overflow: hidden;
     height: 28px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     float: left;
 }
 .headerTopNavLinks a{
     display: block;
     float: left;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
@@ -60,8 +60,8 @@ a{
     color: white;
 }
 .headerTopNavButtons{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 28px;
 }
 .headerRegister{
@@ -72,7 +72,7 @@ a{
 }
 .headerTopNavButtons a{
     display: block;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
@@ -92,7 +92,7 @@ a{
     overflow: visible;
     float: right;
     display: block;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
@@ -121,7 +121,7 @@ a{
     position: relative;
     overflow: visible;
     float: right;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
@@ -139,7 +139,7 @@ a{
     overflow: visible;
     float: right;
     display: block;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
@@ -170,13 +170,13 @@ a{
     overflow: visible;
     float: right;
     display: block;
-    margin: 0px;
+    margin: 0;
     padding: 0 10px;
     line-height: 28px;
     height: 28px;
     color: #9a9a9a;
     font-size: 13px;
-    padding-right: 0px;
+    padding-right: 0;
 }
 .header24option a{
     line-height: 28px;
@@ -245,8 +245,8 @@ a{
 .headerLogos ul{
     float: right;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 50%;
     height: inherit;
     overflow: hidden;
@@ -254,7 +254,7 @@ a{
 .headerLogos ul li{
     float: right;
     margin: 0 1.764%;
-    padding: 0px;
+    padding: 0;
     height: 150px;
     line-height: 150px;
 }
@@ -284,26 +284,26 @@ a{
 .headerNav nav{
     display: table;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: 40px;
 }
 .headerNav nav ul{
     display: table-row;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .headerNav nav ul li{
     display: table-cell;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 .headerNav nav ul li a{
     display: block;
     white-space: nowrap;
-    padding: 0px 10px;
+    padding: 0 10px;
     margin-top: -2px;
 }
 .headerNav nav ul li span{
@@ -320,6 +320,25 @@ a{
 .headerNav nav ul li span:hover{
     color: #fff;
     border-bottom-color: #fff;
+}
+.headerNav nav ul li div{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 1.47%;
+    right: 1.47%;
+    margin: 0;
+    padding: 1%;
+    font-family: 'Roboto',arial;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-top-style: none;
+    color: #000;
+    overflow: auto;
+}
+.headerNav ul li div:hover{
+    display: block;
 }
 
 

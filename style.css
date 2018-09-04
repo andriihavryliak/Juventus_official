@@ -317,6 +317,11 @@ a{
     color: #fff !important;
     border-bottom-color: #fff !important;
 }
+.headerNav nav ul li span:hover{
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
 
 
 

@@ -1,4 +1,4 @@
-.body{
+body{
     font-family: "Roboto",arial;
     font-size: 1em;
     position: relative;
@@ -218,6 +218,12 @@ a{
     margin-right: .15em;
     font-size: 56px;
 }
+@font-face {
+    font-family: 'IconsFont';
+    src: url('fonts/juve-icons.woff?-f31v7j') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
 @font-face{
     font-family: 'juve-icons';
     src: url("fonts/juve-icons.woff");
@@ -268,6 +274,7 @@ a{
     overflow: hidden;
     line-height: inherit;
     font-size: 90px;
+    color: #000;
 }
 .iconFont {
     font-family: 'IconsFont' !important;
@@ -288,7 +295,7 @@ a{
     padding: 0;
     height: 40px;
 }
-.headerNav nav ul{
+.headerNav ul{
     display: table-row;
     list-style: none;
     margin: 0;
@@ -337,8 +344,115 @@ a{
     color: #000;
     overflow: auto;
 }
-.headerNav ul li div:hover{
+.headerNav ul li:hover div{
     display: block;
+}
+.headerNav nav ul li div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #4d4d4d;
+    margin-right: -5px;
+}
+.headerNav nav ul li div ul:last-child{
+    border-right: none;
+}
+.headerNav nav ul li div ul li{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.groupheader {
+    margin-top: 1.5em;
+    margin-bottom: .2em;
+    padding-bottom: 7px !important;
+}
+.groupheader-linked{
+    margin-top: .5em !important;
+    margin-bottom: -10px !important;
+    padding-bottom: 7px !important;
+}
+.groupheader-linked a{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+.groupheader-linked a:hover {
+    background: black !important;
+    color: white !important;
+}
+.groupheader a {
+    font-weight: bold !important;
+    color: #000 !important;
+    cursor: inherit;
+}
+.groupheader a:hover{
+    background: transparent !important;
+
+}
+.headerNav nav ul li div ul li {
+    display: block;
+    padding: 2% 2% .75%;
+    color: #4d4d4d;
+    text-transform: none;
+}
+.headerNav nav ul li div a{
+    color: #4d4d4d;
+    font-weight: lighter;
+}
+.headerNav nav ul li div a:hover{
+    background: black;
+    color: white;
+}
+.menuStore{
+    border-bottom: none !important;
+    display: inline-block;
+    margin-left: 5px;
+}
+.groupheader-linked-top{
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+    padding-bottom: 7px !important;
+}
+.groupheader-linked-top a{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+.groupheader-linked-top a:hover {
+    background: black !important;
+    color: white !important;
+}
+.groupheader-top{
+    margin-top: 1.5em !important;
+    margin-bottom: .2em;
+    padding-bottom: 7px !important;
+}
+.groupheader-top a{
+    font-weight: bold !important;
+    color: #000 !important;
+    cursor: inherit;
+}
+.groupheader-top a:hover{
+    background: transparent !important;
+
+}
+.groupheader-linked-middle{
+    margin-top: .5em !important;
+    margin-bottom: -10px !important;
+    padding-bottom: 7px !important;
+}
+.groupheader-linked-middle a{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+.groupheader-linked-middle a:hover{
+    background: black !important;
+    color: white !important;
+}
+.image{
+    margin: 15px 0;
 }
 
 

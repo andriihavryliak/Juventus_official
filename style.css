@@ -7,12 +7,13 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 a{
     cursor: pointer;
     text-decoration: none;
 }
-.header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -20,6 +21,17 @@ a{
     z-index: 100;
     color: #fff;
     min-width: 320px;
+    display: block;
+}
+.header-min{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: #fff;
+    min-width: 320px;
+    display: none;
 }
 .headerTopNav{
     height: 28px;
@@ -27,9 +39,19 @@ a{
     color: #fff;
     overflow: visible;
     font-family: "Roboto Condensed";
-    font-size: 14px
+    font-size: 14px;
+    transition: height 250ms ease;
 }
-.wrapper{
+.headerTopNav-min{
+    height: 22px;
+    background-color: #000;
+    color: #fff;
+    overflow: visible;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    transition: height 250ms ease;
+}
+.wrapper {
     overflow: visible;
     max-width: 990px;
     color: #fff;
@@ -64,6 +86,7 @@ a{
     padding: 0;
     height: 28px;
 }
+
 .headerRegister{
     background-color: #fdc600;
     color: #000;
@@ -192,6 +215,10 @@ a{
     background-color: #fff;
     color: #000;
 }
+.headerLogos-min{
+    height: 0;
+    overflow: hidden;
+}
 .headerTitle{
     text-transform: capitalize;
     color: #000;
@@ -288,6 +315,25 @@ a{
     font-family: "JuventusFans-Regular";
     font-size: 24px;
 }
+.headerNav-min {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    clear: both;
+    font-family: "JuventusFans-Regular";
+    font-size: 24px;
+}
+.headerLogo-min{
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: 1.47%;
+    margin-top: 5px;
+}
+.headerLogo-min img {
+    display: block;
+    width: 30px;
+}
 .headerNav nav{
     display: table;
     width: 100%;
@@ -295,7 +341,21 @@ a{
     padding: 0;
     height: 40px;
 }
+.headerNav-min nav{
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    padding-left: 6.47%;
+}
 .headerNav ul{
+    display: table-row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.headerNav-min ul{
     display: table-row;
     list-style: none;
     margin: 0;
@@ -307,7 +367,19 @@ a{
     padding: 0;
     text-align: center;
 }
+.headerNav-min nav ul li{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 .headerNav nav ul li a{
+    display: block;
+    white-space: nowrap;
+    padding: 0 10px;
+    margin-top: -2px;
+}
+.headerNav-min nav ul li a{
     display: block;
     white-space: nowrap;
     padding: 0 10px;
@@ -320,11 +392,22 @@ a{
     border-bottom: 2px solid #000;
     color: #9a9a9a;
 }
+.headerNav-min nav ul li span{
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    border-bottom: 2px solid #000;
+    color: #9a9a9a;
+}
 .active{
     color: #fff !important;
     border-bottom-color: #fff !important;
 }
 .headerNav nav ul li span:hover{
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.headerNav-min nav ul li span:hover{
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -344,7 +427,26 @@ a{
     color: #000;
     overflow: auto;
 }
+.headerNav-min nav ul li div{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 1.47%;
+    right: 1.47%;
+    margin: 0;
+    padding: 1%;
+    font-family: 'Roboto',arial;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-top-style: none;
+    color: #000;
+    overflow: auto;
+}
 .headerNav ul li:hover div{
+    display: block;
+}
+.headerNav-min ul li:hover div{
     display: block;
 }
 .headerNav nav ul li div ul{
@@ -357,7 +459,20 @@ a{
     border-right: 1px solid #4d4d4d;
     margin-right: -5px;
 }
+.headerNav-min nav ul li div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    float: left;
+    text-align: left;
+    border-right: 1px solid #4d4d4d;
+    margin-right: -5px;
+}
 .headerNav nav ul li div ul:last-child{
+    border-right: none;
+}
+.headerNav-min nav ul li div ul:last-child{
     border-right: none;
 }
 .headerNav nav ul li div ul li{
@@ -365,6 +480,12 @@ a{
     padding: 0;
     text-align: left;
 }
+.headerNav-min nav ul li div ul li{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
 .groupheader {
     margin-top: 1.5em;
     margin-bottom: .2em;
@@ -398,11 +519,25 @@ a{
     color: #4d4d4d;
     text-transform: none;
 }
+.headerNav-min nav ul li div ul li {
+    display: block;
+    padding: 2% 2% .75%;
+    color: #4d4d4d;
+    text-transform: none;
+}
 .headerNav nav ul li div a{
     color: #4d4d4d;
     font-weight: lighter;
 }
+.headerNav-min nav ul li div a{
+    color: #4d4d4d;
+    font-weight: lighter;
+}
 .headerNav nav ul li div a:hover{
+    background: black;
+    color: white;
+}
+.headerNav-min nav ul li div a:hover{
     background: black;
     color: white;
 }
@@ -453,6 +588,62 @@ a{
 }
 .image{
     margin: 15px 0;
+}
+.content{
+    display: none;
+}
+.wrapper-content{
+    color: #fff;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+    max-width: 1920px;
+    height: 580px;
+}
+.wrapper-inner{
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: auto;
+    max-width: 100%;
+    height: 540px;
+}
+.main-element-large{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.slick-list{
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.slide-main{
+    width: 693px;
+    height: 100%;
+    position: relative;
+}
+.slide-image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background-image: url("img/ECA General Assembly (1).variant960x540.jpg");
+}
+.slide-image:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity 700ms ease;
+    transition: opacity 700ms ease;
 }
 
 

@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -590,7 +590,7 @@ header{
     margin: 15px 0;
 }
 .content{
-    display: none;
+    display: block;
 }
 .wrapper-content{
     color: #fff;
@@ -604,8 +604,11 @@ header{
     margin-left: 0px;
     margin-right: 0px;
     overflow: auto;
-    max-width: 100%;
+    width: 100%;
     height: 540px;
+    float: left;
+    position: relative;
+    margin-bottom: 40px;
 }
 .main-element-large{
     width: 50%;
@@ -617,11 +620,57 @@ header{
     height: 100%;
     transform: translate3d(0, 0, 0);
 }
-
+.slick-dots-big{
+    display: block;
+    position: relative;
+    bottom: 3.5%;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 4px;
+}
+.slick-dots-big li{
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    border: none;
+    background: #fff;
+    color: #fff;
+    height: 4px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+.slick-track{
+    opacity: 1;
+    width: 4851px;
+    transform: translate3d(-693px, 0px, 0px);
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before{
+    display: table;
+    content: "";
+}
 .slide-main{
     width: 693px;
     height: 100%;
     position: relative;
+    float: left;
+}
+.slide-main a{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
 }
 .slide-image{
     position: absolute;
@@ -645,8 +694,1068 @@ header{
     -webkit-transition: opacity 700ms ease;
     transition: opacity 700ms ease;
 }
+.slide-image div{
+    background-image: url("img/ECA General Assembly (1).variant960x540.jpg");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-image:after{
+    content: '\2263';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    z-index: 10;
+    font-family: 'IconsFont';
+}
+.slide-image div:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0)), color-stop(95%, rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.9) 95%);
+}
+.slide-image div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.title1{
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 62px;
+    bottom: 7%;
+    max-height: 92%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    padding: 0px;
+    text-align: center;
+    z-index: 3;
+    color: #fff;
 
+}
+.element-medium{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.match-center{
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    text-align: center;
+}
+.match-center ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10px;
+}
+.match-center ul li{
+    padding: 40px 0;
+    margin: 0;
+}
+.place{
+    color: #686868;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+}
+.clearfix{
+    display: block;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+.clearfix li{
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+.name1{
+    color: #686868;
+    margin: 7px 0px 0px;
+    line-height: 100px;
+    padding-right: 5px;
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-weight: 700;
+    width: 31%;
+    text-align: right;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logo1{
+    background-image: url("img/valencia_cf.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 70px;
+    width: 12%;
+}
+.logo-result{
+    width: 14%;
+    text-align: center;
+}
+.result{
+    margin-top: 20px;
+    font-family: "Roboto Condensed";
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    float: left;
+    width: 100%;
+    white-space: nowrap
+}
+.logo2{
+    background-image: url("img/logo-j2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 80px;
+    width: 10%;
+}
+.name2{
+    color: #686868;
+    margin: 7px 0 0;
+    line-height: 100px;
+    padding-right: 0;
+    padding-left: 10px !important;
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-weight: 700;
+    width: 31%;
+    text-align: left;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.clearfix:after{
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    content: " ";
+    visibility: hidden;
+}
+.button{
+    position: relative;
+    margin: -5px 20px;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 25px;
+    line-height: 1.75em;
+    font-weight: normal;
+    height: 2em;
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    font-family: 'Roboto',arial;
+    -webkit-transition: color 250ms ease, border 250ms ease;
+    transition: color 250ms ease, border 250ms ease;
+}
+.button:hover{
+    color: black;
+    background-color: #fff;
+}
+.element-small{
+    width: 25%;
+    height: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.image-small{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.image-small div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/juventuswomen.variant480x270.jpg");
+}
+.image-small div:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0,0,0,0)), color-stop(95%, rgba(0,0,0,0.9)));
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,0.9) 95%);
+}
+.image-small:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity 700ms ease;
+    transition: opacity 700ms ease;
+}
+.image-small:after{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    content: '\2263';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    z-index: 10;
+    font-family: 'IconsFont'
+}
+.image-small a{
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
 
+}
+.image-small:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.title{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 14%;
+    padding: 0px;
+    max-height: 85%;
+    text-align: center;
+    z-index: 3;
+    color: #fff;
+    font-family: 'OpenSansBold';
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 31px;
+}
+.wrapper-content2{
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner2{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+}
+.advertisement-juve{
+    width: 100%;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.advertisement-juve a{
+    width: 100%;
+    float: left;
+}
+.advertisement-juve img{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+}
+.wrapper-content3{
+    background: #fff;
+}
+.wrapper3{
+    max-width: 1020px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner3{
+    color: black;
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+}
+.teaser{
+    margin-top: 40px;
+    width: 30.208%;
+    height: 250px;
+    padding-bottom: 25.25252525%;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.teaser-content{
+    overflow: visible;
+    padding: 0 5%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+.teaser-slick-slider{
+    height: 100%;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.teaser-slick-draggable{
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.teaser-slick-track{
+    opacity: 1;
+    width: 1485px;
+    transform: translate3d(-297px, 0px, 0px);
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.teaser-slick-track:before{
+    display: table;
+    content: '';
+}
+.teaser-slick-cloned{
+    width: 297px;
+    background: #000;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    float: left;
+}
+.teaser-slick-active{
+    width: 297px;
+    background: #000;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    float: left;
+}
+.teaser-image{
+    height: 60%;
+    overflow: hidden;
+}
+.overlay{
+    height: 60%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 700ms ease;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    cursor: pointer;
+    color: #fff;
+}
+.teaserContent{
+    height: 40%;
+    width: 100%;
+    padding: 10px 15px;
+    -webkit-transition: background-color 700ms ease;
+    transition: background-color 700ms ease;
+}
+.teaser-bg1{
+    background-image: url("img/485x273-jcom-new_kit_third_1819.variant485x273.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.teaser-content h2{
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 1.375em;
+    line-height: 1em;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 10px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    -webkit-transition: color 700ms ease;
+    transition: color 700ms ease;
+    white-space: nowrap;
+}
+.teaser-content p{
+    margin: 0;
+    line-height: 1.25em;
+    color: #9a9a9a;
+}
+.teaser-slick-slide{
+    width: 297px;
+    background: #000;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    float: left;
+}
+.teaser-bg2{
+    background-image: url("img/teaserbox_jtv_ita.variant485x273.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.slick-dots{
+    display: block;
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    line-height: 4px;
+}
+.slick-dots li{
+    width: 35px;
+    background: #000;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    color: #fff;
+    height: 4px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+.slick-dot-active{
+    background: #fdc600 !important;
+}
+.module-banner{
+    margin-top: 40px;
+    width: 30.208%;
+    height: 250px;
+    padding-bottom: 25.25252525%;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.module-banner-content{
+    overflow: visible;
+    padding: 0 5%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+}
+.module-slider-page{
+    overflow: hidden;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.module-headline{
+    color: #000;
+    margin-bottom: 4.0404%;
+}
+.module-headline div{
+    border-bottom: 1px solid #cdcdcd;
+    text-transform: uppercase;
+}
+.module-headline div span{
+    border-bottom: 2px solid;
+    display: inline-block;
+    line-height: 2em;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    vertical-align: bottom;
+    font-family: "JuventusFans-Regular";
+    font-size: 1.625em;
+}
+.slider-news{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.slider-news-list{
+    max-width: 990px;
+    width: 86%;
+    display: inline-block;
+    margin: auto;
+}
+.imgWrapper{
+    position: relative;
+    max-width: 280px;
+    overflow: hidden;
+    margin: auto;
+}
+.news-slide{
+    width: 255px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.news-date{
+    color: #9a9a9a;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 0 8px;
+    max-width: 280px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.news-header{
+    color: #9a9a9a;
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    line-height: 31px;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: left;
+}
+.slick-prev{
+    display: block;
+    left: 0;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.slick-next{
+    display: block;
+    right: 6px;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.slick-prev:hover{
+    color: black;
+}
+.slick-next:hover{
+    color: black;
+}
+.slick-dots2{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 4px;
+    margin-right: 15px;
 
+}
+.slick-dots2 li{
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    border: none;
+    background: #000;
+    color: #fff;
+    height: 4px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+.adv-banner{
+    width: 100%;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+}
+.wrapper-content4{
+    background: #000;
+}
+.wrapper4{
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner4{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+}
+.module-title{
+    margin-top: 20px;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    color: white;
 
+}
+.module-title div{
+    border-bottom: 1px solid #cdcdcd;
+    text-transform: uppercase;
+}
+.module-title div span{
+    border-bottom: 2px solid;
+    display: inline-block;
+    line-height: 2em;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    vertical-align: bottom;
+    font-family: "JuventusFans-Regular";
+    font-size: 1.625em;
+}
+.module-include-content{
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+.module-include-list{
+    max-height: 315px;
+    max-width: 990px;
+    width: 86%;
+    display: inline-block;
+    margin: auto;
+}
+.shopSliderItem{
+    width: 145px;
+    text-align: center;
+    margin: 30px 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.shopSliderImg{
+    background-image: url("img/CF3489-home.png");
+    margin: 10px auto 0 auto;
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 130px;
+}
+.shopItemName{
+    color: #9a9a9a;
+    font-size: 17px;
+    line-height: 19px;
+    min-height: 68px;
+    max-height: 68px;
+    overflow: hidden;
+    height: auto;
+    margin: 13px 0 6px 0;
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    text-align: left;
+}
+.price{
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9a9a9a;
+    font-size: 21px;
+    margin: 0;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 5px;
+    overflow: hidden;
+    position: relative;
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    text-align: left;
+}
+.iconFont2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    font-family: 'IconsFont' !important;
+    text-transform: none !important;
+    font-size: 21px;
+    line-height: 32px;
+}
+.iconFont2:before{
+    position: absolute;
+    content: "s";
+    font-family: "IconsFont";
+    color: #000;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    line-height: 32px;
+    border-bottom: 100px solid #fdc600;
+    border-left: 50px solid transparent;
+    height: 0;
+    width: 100%;
+}
+.shopSliderItem:hover{
+    background: rgba(31, 31, 32, 0.86);
+}
+.shopSliderImg2{
+    background-image: url("img/senza-titolo-1.png");
+    margin: 10px auto 0 auto;
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 130px;
+}
+.shopSliderImg3{
+    background-image: url("img/2018-third.png");
+    margin: 10px auto 0 auto;
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 130px;
+}
+.shopSliderImg4{
+    background-image: url("img/basketball-jsy.png");
+    margin: 10px auto 0 auto;
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 130px;
+}
+.shopSliderImg5{
+    background-image: url("img/NIKTEEM7-tshirt7.png");
+    margin: 10px auto 0 auto;
+    background-size: 100% auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 130px;
+}
+.module-prev{
+    display: block;
+    margin-top: -25px;
+    left: 0;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.module-next{
+    display: block;
+    margin-top: -25px;
+    right: 0;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.module-prev:hover{
+    color: white;
+}
+.module-next:hover{
+    color: white;
+}
+.slick-dots4{
+    display: block;
+    list-style-type: none;
+    margin: 0px 15px 0 15px;
+    padding: 0;
+    text-align: right;
+    line-height: 4px;
+}
+.slick-dots4 li{
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    border: none;
+    background: #fff;
+    color: #fff;
+    height: 4px;
+    margin-left: 10px;
+    vertical-align: bottom;
+}
+.wrapper-content5{
+    background: #fff;
+}
+.wrapper5{
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner5{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+    color: #000;
+}
+.teaser-bg3{
+    background-image: url("img/SALA COPPE AGGIORNATA 1718.variant485x273.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.teaser-bg4{
+    background-image: url("img/museo_teaserbox_28-06-18.variant485x273.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.teaser-bg5{
+    background-image: url("img/box 485x273_legedns.variant485x273.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.wrapper-content6{
+    background: #fff;
+}
+.wrapper6{
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner6{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+    color: #000;
+}
+.trophyItem{
+    width: 165px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.trophyNumber{
+    color: #000;
+    font-family: "JuventusFans-Bold";
+    font-size: 52px;
+    margin: 0;
+}
+.cupsIcon{
+    color: #000;
+    font-family: 'CupsFont';
+    font-size: 140px;
+    line-height: 30px;
+    padding: 0;
+    margin: 22px 0 20px 0;
+}
+.cupsIcon img{
+    margin: auto;
+    width: 110px;
+    height: 106px;
+    display: block;
+}
+.trophyName{
+    font-family: "Roboto Condensed";
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 19px;
+    height: 100px;
+    margin: 0 13%;
+    color: #9a9a9a;
+}
+.module-prev2{
+    display: block;
+    margin-top: -25px;
+    left: 0;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.module-next2{
+    display: block;
+    margin-top: -25px;
+    right: 0;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: #9a9a9a;
+    font-family: 'IconsFont';
+}
+.module-prev2:hover{
+    color: black;
+}
+.module-next2:hover{
+    color: black;
+}
+.wrapper-content7{
+    background: #000;
+}
+.wrapper7{
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.wrapper-inner7{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+    color: #000;
+}
+.teaser-long{
+    margin-top: 40px;
+    width: 46%;
+    padding-bottom: 20.2020202%;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    margin-bottom: 40px;
+    height: 200px;
+}
+.teaser-long-content{
+    overflow: visible;
+    padding: 0 3.22580645%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.teaser-long-track{
+    opacity: 1;
+    width: 463px;
+    height: 100%;
+}
+.teaser-long-img{
+    height: 60%;
+    overflow: hidden;
+}
+.teaser-long-bg1{
+    background-image: url("img/485x273_sostenibilita.variant485x273.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+.teaser-headline{
+    height: 40%;
+    width: 100%;
+    padding: 10px 15px;
+    -webkit-transition: background-color 700ms ease;
+    transition: background-color 700ms ease;
+}
+.teaser-headline h2{
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 1.375em;
+    line-height: 1em;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 10px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+.teaser-long-bg2{
+    background-image: url("img/IR_HP_LUGLIO2017.variant485x273.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
 

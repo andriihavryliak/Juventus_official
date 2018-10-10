@@ -1758,4 +1758,208 @@ header{
     -webkit-transition: all 700ms ease;
     transition: all 700ms ease;
 }
-
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+.footer-wrapper{
+    width: 100%;
+    overflow: auto;
+    color: #fff;
+    max-width: 1020px;
+    margin: 0px auto;
+    padding: 0px;
+    height: inherit;
+    position: relative;
+}
+.footer-wrapper-inner{
+    margin: 0 1.47%;
+    overflow: auto;
+    max-width: 100%;
+}
+.footer-title{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    float: left;
+    padding: 0 1.5625%;
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+.footer-title div{
+    border-bottom: 1px solid #cdcdcd;
+    text-transform: uppercase;
+}
+.footer-title div span{
+    border-bottom: 2px solid;
+    display: inline-block;
+    line-height: 2em;
+    -webkit-transition: all 250ms ease 0s;
+    transition: all 250ms ease 0s;
+    vertical-align: bottom;
+    font-family: "JuventusFans-Regular";
+    font-size: 1.625em;
+}
+.partners{
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.partners div{
+    float: left;
+    margin-bottom: 25px;
+    width: 100%
+}
+.partners div a img{
+    vertical-align: middle;
+    width: 100%;
+}
+.adidas{
+    margin: 0 4.0404%;
+    width: 17.1717%;
+    display: inline-block;
+    float: none;
+    color: #686868;
+    text-decoration: none;
+}
+.adidas:hover{
+    background-image: url("img/adidas.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.jeep{
+    margin: 0 4.0404%;
+    width: 17.1717%;
+    display: inline-block;
+    float: none;
+    color: #686868;
+    text-decoration: none;
+}
+.cygames{
+    float: none !important;
+    text-align: center !important;
+    display: inline-block;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+footer .partners div a:hover.cygames {
+    background-image: url("img/cygames.svg");
+}
+.allianz{
+    margin-left: 2.5%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.sky{
+    width: 8%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+}
+.dececco{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.betfair{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.linglong{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.mms{
+    width: 10%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+}
+.randstad{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.samsung{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.noberasco{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.balocco{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.ganten{
+    width: 10%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+}
+.ubi{
+    margin-left: 2%;
+    margin-right: 3%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.frecciarossa{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.philips{
+    width: 10%;
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+}
+.option24{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.osonyq{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 14.1414%;
+}
+.mainLogo{
+    display: inline-block;
+    float: none;
+    margin: 0 1% 25px;
+    width: 5.416%;
+    height: 125px;
+}
+.mainlogo img{
+    height: 125px;
+}
+.footer-wrapper-bg{
+    margin-top: 70px;
+}
+.footerBg{
+    background: #000;
+}
